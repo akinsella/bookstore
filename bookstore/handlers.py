@@ -100,7 +100,7 @@ def collect_handlers(log, base_url, validation):
         log.info(f"[bookstore] Enabling bookstore publishing, version: {version}")
         handlers.append(
             (
-                url_path_join(base_bookstore_api_pattern, r"/publish%s" % path_regex),
+                url_path_join(base_bookstore_api_pattern, r"/published%s" % path_regex),
                 BookstorePublishAPIHandler,
             )
         )
