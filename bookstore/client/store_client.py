@@ -27,7 +27,7 @@ class BookstoreClient(CurrentNotebookClient):
     @property
     def publish_endpoint(self):
         """Helper to refer to construct the publish endpoint for this notebook server."""
-        api_endpoint = "/api/bookstore/publish/"
+        api_endpoint = "/api/bookstore/published/"
         return f"{self.url}{api_endpoint}"
 
     def publish(self, path=None):
